@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background-image: url("GalaxyBackground1..webp");
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.Ast1{
+width: 20vh;
+top: 1vh;
+left: 50%;
+height: auto;
+animation: spin 10s linear infinite;
+position: absolute;
+}
+
+.Planet2{
+    top: 50vh;
+    left: 20vh;
+    width: 20vh;
+    height: auto;
+animation: rotate 10s linear infinite;
+position: absolute;
+}
+.Planet1{
+width: 20vh;
+top: 20vh;
+left: 50%;
+height: auto;
+animation: skew 10s linear infinite;
+position: absolute;
+}
+
+.BlackHole1{
+  display: block;
+  margin: auto;
+  width: 50%;
+  animation: Expansion 70s linear infinite;
+}
+
+.Sun1{
+  width: 30vh;
+  left: 30vh;
+  top: 20vh;
+  animation: OrbitSpin 20s linear infinite;
+  position: absolute;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes  LeftToRight{
+    0% {
+        left: -10vw;
+        top: 30vh;
+    }
+    100% {
+        left: 110vw;
+        top: 40vh;
+    }
+}
+
+@keyframes spin{
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+        0% {
+        left: -10vw;
+        top: 30vh;
+    }
+    100% {
+        left: 110vw;
+        top: 40vh;
+    }
+}
+
+@keyframes Expansion {
+    0% {
+        transform: scale(0.5, 0.5);
+    }
+        100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    100% {
+        transform: skew(20deg, 20deg);
+    }
+}
+
+@keyframes matrix{
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    100% {
+        transform: matrix(1.5, 0.5, -0.5, 1.5, 0, 0);
+    }
+}
+
+@keyframes OrbitSpin {
+     0% {
+        left: 10vw;
+        right: 10vh;
+    }
+    25% {
+        left: 80vw;
+        top: 10vh;
+    }
+    50% {
+        left: 80vw;
+        top: 80vh;
+    }
+    75% {
+        left: 10vw;
+        top: 80vh;
+    }
+    100% {
+        left: 10vw;
+        top: 10vh;
+    }
+}
